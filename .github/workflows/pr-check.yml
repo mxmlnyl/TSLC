@@ -17,10 +17,6 @@ jobs:
           all_but_latest: true
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-          submodules: "recursive"
-          token: ${{secrets.SUBMODULE_READ}}
 
       - name: Use Node.js 12.x
         uses: actions/setup-node@v3
@@ -90,6 +86,7 @@ jobs:
           all_but_latest: true
       - name: Checkout
         uses: actions/checkout@v3
+
       - name: Use Node.js 12.x
         uses: actions/setup-node@v3
         with:
