@@ -14,7 +14,8 @@ export const selectionSort = (nums: numArr): numArr => {
         minIndex = j;
       }
     }
-    // flips the value
+    // flips the value 
+    // destructuring assignment
     [nums[i], nums[minIndex]] = [nums[minIndex], nums[i]];
   }
 
